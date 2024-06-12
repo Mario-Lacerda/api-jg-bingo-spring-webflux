@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: reactive-bingo
+  data:
+    mongodb:
+      uri: mongodb://reactive-bingo:reactive-bingo@localhost:27017/reactive-bingo-test?authSource=admin

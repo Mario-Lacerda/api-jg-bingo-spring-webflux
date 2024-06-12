@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: reactive-bingo
+  data:
+    mongodb:
+      uri: mongodb://development:development@localhost:27017/reactive-bingo?authSource=admin
+  webflux:
+    base-path: /bingo-api
+  mail:
+    host: localhost
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          port: 1025
+
+reactive-bingo:
+  mail:
+    sender: Reactive Bingo <noreply@reactivebingo.com.br>
+  retry-config:
+    max-retries: 3
+    min-duration: 1
